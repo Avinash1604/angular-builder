@@ -1,18 +1,18 @@
 # CommandTestDemo
 
-This demo project will test the command builder . 
-
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.1.0-rc.0.
+As an example, will create a builder that executes a shell command. and was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.1.0-rc.0.
 
 ## how to integrate custom builder to project 
 
-Please add the  below local reference of the custom builder in package.json 
+import the local custom builder depedencies to package.json 
+
 ```
     "@devkit/command-runner": "file:../command-builder",
 ```
-Please go to command builder directory and run npm run build and go to command-test-demo directory to install custom builder - npm i 
 
-Please add the custom builder command in angular.jsop file
+Please go to command builder directory and run - npm run build and go to command-test-demo directory to install custom builder dependencies- npm i 
+
+Please add the below custom builder command to angular.json file 
 
 ```
    "shell-command": {
