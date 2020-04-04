@@ -121,6 +121,15 @@
               "devServerTarget": "command-test-demo:serve:production"
             }
           }
+        },
+        "touch": {
+          "builder": "@devkit/command-runner:command",
+          "options": {
+            "command": "ls",
+            "args": [
+              "src/"
+            ]
+          }
         }
       }
     }},

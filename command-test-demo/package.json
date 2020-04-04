@@ -28,6 +28,7 @@
     "@angular/cli": "~9.1.0-rc.0",
     "@angular/compiler-cli": "~9.1.0-rc.1",
     "@angular/language-service": "~9.1.0-rc.1",
+    "@example/command-runner": "file:../command-builder",
     "@types/node": "^12.11.1",
     "@types/jasmine": "~3.5.0",
     "@types/jasminewd2": "~2.0.3",
