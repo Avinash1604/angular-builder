@@ -1,6 +1,39 @@
 # CommandTestDemo
 
+This demo project will test the command builder . 
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.1.0-rc.0.
+
+## how to integrate custom builder to project 
+
+Please add the  below local reference of the custom builder in package.json 
+```
+    "@devkit/command-runner": "file:../command-builder",
+```
+Please go to command builder directory and run npm run build and go to command-test-demo directory to install custom builder - npm i 
+
+Please add the custom builder command in angular.jsop file
+
+```
+   "shell-command": {
+          "builder": "@devkit/command-runner:command",
+          "options": {
+            "command": "ls",
+            "args": [
+              "src/"
+            ]
+          }
+```
+## Test builder 
+ ```
+ ng run command-test-demo:touch 
+  or
+ ng run command-test-demo:shell-command --command=df
+  ```
+ ## References 
+ https://angular.io/guide/cli-builder#creating-a-builder
+ https://blog.angular.io/introducing-cli-builders-d012d4489f1b
+ https://www.npmjs.com/package/@angular-builders/custom-webpack
 
 ## Development server
 
@@ -9,6 +42,7 @@ Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app w
 ## Code scaffolding
 
 Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+
 
 ## Build
 
