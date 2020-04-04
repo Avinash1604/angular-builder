@@ -132,6 +132,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "command-test-demo"
+    }
+  },
+  "defaultProject": "command-test-demo",
+  "cli": {
+    "analytics": "9d6fffcc-57a4-42df-9bcb-caea485925f6"
+  }
 }
